@@ -1,0 +1,29 @@
+@CHARSET "ISO-8859-1";
+#deg1{
+	text-align: center;
+	color: #FFFFFF;
+	width: 500px;
+	height: 100px;
+	background: linear-gradient(to bottom, #0000FF, #FF0000)
+}
+#deg2{
+	text-align: center;
+	color: #FFFFFF;
+	width: 500px;
+	height: 100px;
+	background: linear-gradient(to right, #FF0000, #00FF00)
+}
+#deg3{
+	text-align: center;
+	color: #FFFFFF;
+	width: 500px;
+	height: 100px;
+	background: linear-gradient(to top, #FFFF00, #FF0000)
+}
+#deg4{
+	text-align: center;
+	color: #FFFFFF;
+	width: 500px;
+	height: 100px;
+	background: linear-gradient(to left, #FF0000, #FFFF00)
+}
