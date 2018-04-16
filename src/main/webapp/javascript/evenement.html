@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form>
+		<input type="button" id="red" value="rouge" onclick="turnColor(this.id);" />
+		<input type="button" id="green" value="vert" onclick="turnColor(this.id);" />
+		<input type="button" id="blue" value="bleu" onclick="turnColor(this.id);" />
+	</form>
+		<div id="monDiv"
+		style='height:150px;
+		width:150px;
+		background-color:black'>	
+	</div>
+	<script type="text/javascript">
+		function turnColor(c) {
+			document.getElementById("monDiv").style.backgroundColor=c;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<input id="nomTab" type="text" name="nom"  /> </br> <input
+			type="button" value="Quel âge as-tu ?" onclick="getAge();" />
+	</form>
+	<script type="text/javascript">
+		var tabAsso = {
+			"anatole" : 19,
+			"bernard" : 45,
+			"christophe" : 34,
+			"dominique" : 55,
+			"franck" : 28,
+			"georges" : 78,
+			"lucas" : 12,
+			"madeleine" : 30,
+			"pierre" : 25
+		};
+		function getAge() {
+			var currentName = document.getElementById("nomTab").value;
+			//var c = c + currentName.charAt(0).toUppercase;
+			//currentName = currentName.shift();
+			//currentName.unshift(c.toUpper());
+			alert(currentName + " a " + tabAsso[currentName]);
+		}
+	</script>
+</body>
+</html>

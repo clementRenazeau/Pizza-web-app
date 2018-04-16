@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<ul id="users">
+		
+		</ul>
+	</div>
+	<button onclick="requeteAffichage();">Afficher la base de donnée</button>
+	
+	<script type="text/javascript">
+		function afterResultLoad(){
+			var res = JSON.parse(this.responseText);
+			res.forEach(function(element){
+				var use=document.getElementById("users");
+				var newUse = document.createElement("li");
+				var tex = document.createTextNode(element.name + ", " + element.password);
+				newUse.appendChild(tex);
+				use.appendChild(newUse);
+			})
+
+		}
+		function requeteAffichage(){
+			var xhttp = new XMLHttpRequest();
+			xhttp.onload = afterResultLoad;
+			xhttp.open("GET", "http://loisirs-web-backend.cleverapps.io/users", true);
+			xhttp.send();
+		}
+
+	
+	</script>
+	</body>
+</html>

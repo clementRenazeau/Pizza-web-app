@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var notes = [15,12,18,14,16,16,19,13,11,10,16,15];
+		var moy=0;
+		notes.forEach(add);
+		alert("La moyenne vaut " + (moy/12).toFixed(2));
+		function add(item){
+			moy+=item;
+		}
+	</script>
+</body>
+</html>

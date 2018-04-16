@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<script type="text/javascript">
+		var a = 12;
+		var b = 4;
+		function MultiplierPar2(b){
+			var a=b*2;
+			return a;
+		}
+		function rempTab(){
+			document.write("<table>");
+			for(var i=1; i<13; ++i){
+				if(i%4==1){
+					document.write("<tr>");
+				}
+				document.write("<td>", i, "</td>");
+				if(i%4 == 0){
+					document.write("</tr>");
+				}
+			}
+			document.write("</table>");
+		}
+		//document.write("le double de ", b, " est ", MultiplierPar2(b), "</br>");
+		//document.write(myArray_a, myArray_b);
+		console.log("Objet : ", {
+			nom : "DOE",
+			prenom : "John"
+		});
+		console.log("Tableau : ", new Array("Val1", "Val2"));
+		console.log("Variable : ", "val1");
+		function test() {
+			alert("ok");
+		}
+		console.log("Fonction : ", test);
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8" />
+<link rel="stylesheet" media="screen" href="todo_list.css" />
+</head>
+<body>
+	<div class="content">
+		<h1>TODO List</h1>
+		<ul id="todolist">
+		</ul>
+		<input id="todotxt" type="text" />
+		<button id="addtodo" type="button" onclick="addToDo();">Ajouter</button>
+	</div>
+	<script type="text/javascript">
+		function addToDo() {
+			var todotxt=document.getElementById("todotxt").value;
+			var newToDo = document.createElement("li");
+			var tex = document.createTextNode(todotxt);
+			newToDo.appendChild(tex);
+			document.getElementById("todolist").appendChild(newToDo);
+			newToDo.addEventListener("click", suppEl);
+		}
+		function suppEl(event){
+			document.getElementById("todolist").removeChild(event.currentTarget);
+		}
+	</script>
+</body>
+</html>
